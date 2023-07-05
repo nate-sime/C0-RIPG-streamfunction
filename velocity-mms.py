@@ -243,7 +243,7 @@ def run_experiment(formulation: Formulation,
                 ) * ufl.ds
                 return domain + exterior
 
-        # Homogeneous BCs imposed on the streamfunction
+        # Homogeneous BCs imposed on the stream function
         facets = dolfinx.mesh.locate_entities_boundary(
             mesh, dim=mesh.topology.dim-1,
             marker=lambda x: np.ones_like(x[0], dtype=np.int8))
