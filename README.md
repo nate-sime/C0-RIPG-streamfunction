@@ -7,4 +7,4 @@ formulation of the Stokes system using components of the
 [FEniCSx project](https://fenicsproject.org/).
 
 These examples have been tested with DOLFINx using the image
-`dolfinx/latest`.
+`dolfinx/dolfinx:nightly`.
