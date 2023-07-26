@@ -184,7 +184,7 @@ def run_experiment(formulation: Formulation,
                     abs((2 * mu)**-0.5), Vmu.element.interpolation_points()))
             l_inf_k.vector.array[:] = cellwise_maximum(mu_dgp)
 
-            C_p = C_inv(p-1)
+            C_p = C_inv(p-2)
             alpha = C_p * l_inf_f * l_inf_k
 
             # Non-affine cell mappings have a prefactor of the transformation
