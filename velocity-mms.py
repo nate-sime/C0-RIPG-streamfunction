@@ -365,6 +365,7 @@ def run_experiment(formulation: Formulation,
             "‖∇⋅uₕ‖L₂": compute_error(ufl.div(vel) ** 2 * ufl.dx),
             "BC norm 𝜙": compute_error((phi - phi_soln)**2*ufl.ds),
             "BC norm u": compute_error((ufl.curl(phi - phi_soln))**2*ufl.ds),
+            "BC norm u.n": compute_error((ufl.dot(ufl.curl(phi), n))**2*ufl.ds),
             "IPnorm": compute_error(ip_norm(vel - vel_soln))
                 if formulation is Formulation.grad_curl_ripg else np.NaN
         }, index=[0])
