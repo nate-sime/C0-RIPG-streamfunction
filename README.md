@@ -13,5 +13,5 @@ Nathan Sime, Paul Houston, Cian R. Wilson and Peter E. van Keken, \
 the incompressible Stokes system with variable viscosity*
 
 These examples are tested with DOLFINx using the image
-`dolfinx/dolfinx:nightly`.
+`dolfinx/dolfinx:v0.7.0`.
 
