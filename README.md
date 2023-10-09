@@ -11,6 +11,7 @@ This code is provided in support of
 Nathan Sime, Paul Houston, Cian R. Wilson and Peter E. van Keken, \
 *A divergence free $C^0$-RIPG stream function formulation of
 the incompressible Stokes system with variable viscosity*
+[arXiv](https://doi.org/10.48550/arXiv.2309.12895)
 
 These examples are tested with DOLFINx using the image
 `dolfinx/dolfinx:v0.7.0`.
